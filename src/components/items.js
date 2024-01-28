@@ -1,12 +1,12 @@
 import React from 'react';
 
 function Items(props) {
+  console.log(props.items);
   return (
-    <div>
-      <h1>These Items are updated daily</h1>
+    <div className="items-grid">
       {Array.isArray(props.items) ? (
         props.items.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className="item">
             <h2>{item.name}</h2>
             <p>{item.description}</p>
             <p>{item.cost}</p>
