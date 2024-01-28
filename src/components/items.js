@@ -11,12 +11,7 @@ function Items(props) {
             <p>{item.description}</p>
             <p>{item.cost}</p>
             {/* Displaying the main image */}
-            <img src={item.attributes.image1} alt={item.name} />
-
-            {/* Displaying the variant image (if available) */}
-            {item.attributes.variants && item.attributes.variants.length > 0 && (
-              <img src={item.attributes.variants[0].image} alt={`Variant of ${item.name}`} />
-            )}
+            <img src={item.attributes.image} alt={item.name} />
           </div>
         ))
       ) : (
