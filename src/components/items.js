@@ -7,11 +7,9 @@ function Items(props) {
       {Array.isArray(props.items) ? (
         props.items.map((item) => (
           <div key={item.id} className="item">
-            <h2>{item.name}</h2>
-            <p>{item.description}</p>
-            <p>{item.cost}</p>
-            {/* Displaying the main image */}
-            <img src={item.attributes.image} alt={item.name} />
+            <h2 className="item-text">{item.attributes.name}</h2>
+            <p className="item-text">{item.attributes.final_price}</p>
+            <img src={item.attributes.image} alt={item.attributes.name} title={item.attributes.name} />
           </div>
         ))
       ) : (
