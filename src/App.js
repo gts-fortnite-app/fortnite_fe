@@ -11,12 +11,16 @@ function getAPIData() {
 
 function App() {
   const [items, setItems] = useState([]);
+  const [date, setDate] = useState('');
 
   useEffect(() => {
     let mounted = true;
     getAPIData().then(items => {
       if (mounted) {
         setItems(items);
+        const dateObject = new Date(items[0].attributes.date);
+        const readableDate = `${dateObject.toLocaleDateString()} ${dateObject.toLocaleTimeString()}`;
+        setDate(readableDate);
       }
     });
     return () => (mounted = false);
@@ -25,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1>Fortnite Item Shop</h1>
+      {date && <p className="date">{date}</p>}
       <Items items={items} />
     </div>
   );
