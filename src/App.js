@@ -3,8 +3,7 @@ import axios from 'axios';
 import Items from './components/items';
 import { useEffect, useState } from 'react';
 
-// const API_URL = 'https://fortnite-item-shop-be-ed2ec5543cb7.herokuapp.com/api/v1/item_shop';
-const API_URL = 'http://localhost:3000/api/v1/item_shop';
+const API_URL = 'https://fortnite-item-shop-be-ed2ec5543cb7.herokuapp.com/api/v1/item_shop';
 
 function getAPIData() {
   return axios.get(API_URL).then(response => response.data.data);
