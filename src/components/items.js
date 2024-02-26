@@ -8,7 +8,10 @@ function Items(props) {
         props.items.map((item) => (
           <div key={item.id} className="item">
             <h2 className="item-text">{item.attributes.name}</h2>
-            <p className="item-text">{item.attributes.final_price}</p>
+            <div className="item-price">
+              <img src={item.attributes.vbuck_icon} alt="VBuck Icon" className="vbuck-icon" />
+              <p className="item-text">{item.attributes.final_price}</p>
+            </div>
             <img src={item.attributes.image} alt={item.attributes.name} title={item.attributes.name} />
           </div>
         ))

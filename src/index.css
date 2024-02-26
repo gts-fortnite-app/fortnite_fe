@@ -41,3 +41,15 @@ code {
 .item-text {
   color: black; 
 }
+
+.item-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .item-price .vbuck-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
