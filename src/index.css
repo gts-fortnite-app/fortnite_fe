@@ -27,9 +27,9 @@ code {
 .item {
   overflow: hidden;
   border-radius: 8px;
-  border: 1px solid #eee;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #00aeff;
+  background-color: rgb(77, 77, 83);
+  box-shadow: 0 0 10px rgba(240, 2, 2, 0.1);
 }
 
 .item img {
@@ -39,7 +39,7 @@ code {
 }
 
 .item-text {
-  color: black; 
+  color: rgb(17, 110, 240); 
 }
 
 .item-price {
