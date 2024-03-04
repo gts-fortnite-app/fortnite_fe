@@ -2,6 +2,7 @@ import './App.css';
 import axios from 'axios';
 import Items from './components/items';
 import { useEffect, useState } from 'react';
+import logo from './Campaign.svg';
 
 const API_URL = 'https://fortnite-item-shop-be-ed2ec5543cb7.herokuapp.com/api/v1/item_shop';
 
@@ -28,9 +29,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Fortnite Item Shop</h1>
+      <header className="App-header">
+      <img src={logo} alt="Logo"/>
       {date && <p className="date">{date}</p>}
       <Items items={items} />
+      </header>
     </div>
   );
 }
