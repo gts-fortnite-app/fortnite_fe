@@ -2,7 +2,7 @@ import './App.css';
 import axios from 'axios';
 import Items from './components/items';
 import { useEffect, useState } from 'react';
-import logo from './Campaign.svg';
+import logo from './fortnite-logo.svg';
 
 const API_URL = 'https://fortnite-item-shop-be-ed2ec5543cb7.herokuapp.com/api/v1/item_shop';
 
