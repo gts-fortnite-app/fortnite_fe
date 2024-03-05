@@ -7,13 +7,6 @@
   pointer-events: none;
 }
 
-@media (max-width: 600px) {
-  .App-logo {
-    height: 20vmin;
-  }
-}
-
-
 .App-header {
   background-color: #88909f;
   min-height: 100vh;
@@ -36,5 +29,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .App-logo {
+    height: 20vmin !important;
   }
 }
