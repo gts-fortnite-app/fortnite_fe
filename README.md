@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+<div align="center">
+    <img src="https://github.com/gts-fortnite-app/fortnite_be/assets/127896538/04164b07-4b11-4b12-b63a-210ee05b8e5d" alt="Fortnite">
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![pull request](https://img.shields.io/github/issues-pr/gts-fortnite-app/fortnite_fe.svg)
+![pull request closed](https://img.shields.io/github/issues-pr-closed/gts-fortnite-app/fortnite_fe.svg)
+[![website down](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://gts-fortnite-tracker-a0d0405c9f2a.herokuapp.com/)
 
-## Available Scripts
+![Made with React](https://img.shields.io/badge/Made%20with-React-%2361DAFB?style=for-the-badge&logo=react&logoColor=white)
 
-In the project directory, you can run:
+Technologies used:<br>
+<div>
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
+  <img src="https://img.shields.io/badge/circleci-343434?style=for-the-badge&logo=circleci&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GT's Fortnite Tracker App is built with a React Front-End, this application is deployed on Heroku for accessibility. It integrates Fortnite's external API to retrieve real-time data and implements a customized internal API to transmit data to the Front End with Cross-Origin Resource Sharing (CORS) support. 
+<h1> Key Features </h1>
+  <li>Real-Time Updates: Stay up-to-date with the latest additions to the Fortnite item shop, including skins and emotes.</li>
+  <li>UI: A clean design makes navigating through the app easy.</li>
+  <li>Responsive Design: Enjoy a friendly experience across devices and screen sizes.</li>
+<h2>Upcoming Enhancements</h2>
+  <li>Caching Mechanism: Implement 24-hour caching for item shop items to optimize performance and reduce API calls.</li>
+  <li>Content: Implement Fortnite's music tracks and special items to the app, providing a wider array of content.</li>
+  <li>Player Stats Lookup: Enable users to search and view player statistics by ID, offering insights into their friends.</li>
+  <li>Tips Section: Share valuable tips and strategies to help users improve their Fortnite gameplay straight from Fortnite's api.</li>
+  
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<details>
+<summary>The Team</summary>
 
-### `npm test`
+### ![built with love](http://ForTheBadge.com/images/badges/built-with-love.svg)
+- Gabe Torres [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabe-Torres) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabe-torres-74a515269/)
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--- 
 
-### `npm run build`
+## Important Links
+- [Front-End Production Site](https://gts-fortnite-tracker-a0d0405c9f2a.herokuapp.com/)
+- [Back-End Production Site](https://fortnite-item-shop-be-ed2ec5543cb7.herokuapp.com/api/v1/item_shop)
+- [Back-End Repo](https://github.com/gts-fortnite-app/fortnite_be)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h1>Preview of app</h1>
 
-### `npm run eject`
+<div align="center">
+    <img src="https://github.com/gts-fortnite-app/fortnite_fe/assets/127896538/dd887e42-08ca-43f6-a5af-a043e6a0c6f0" alt="Fortnite">
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation Instructions:
+- Fork this repository. 
+- Clone it to your local machine using the command: `git clone git@github.com:Foodie-Brain/fe_foodie.git`.
+- Run the command: `cd fe_foodie`
+- Run the command: `npm install`
+- Run the command: `npm install apollo-upload-client`
+- Run the command: `npm start`
