@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.items-grid {
+/* .items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 40px;
@@ -21,8 +21,8 @@ code {
 @media (max-width: 600px) {
   .items-grid {
     grid-template-columns: 1fr;
-  }
-}
+  } */
+/* } */
 
 .item {
   overflow: hidden;
