@@ -26,7 +26,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
   const [playerStats, setPlayerStats] = useState(null);
-
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     let mounted = true;
@@ -47,9 +47,14 @@ function App() {
   const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
   
   const handleSearch = (query) => {
-    getPlayerStats(query).then(stats => {
-      setPlayerStats(stats);
-    })
+    setError(null); 
+    getPlayerStats(query)
+      .then(stats => {
+        setPlayerStats(stats);
+      })
+      .catch(err => {
+        setError("Player not found. Please use exact name match");
+      });
   };
   
   const handleClose = () => {
@@ -62,6 +67,11 @@ function App() {
       <header className="App-header">
       <img src={logo} alt="Logo"/>
       <SearchBar onSearch={handleSearch} />
+      {error && (
+          <div className="notification is-danger">
+            {error}
+          </div>
+        )}
         {playerStats && (
           <div className="player-stats">
           <div class="card">
