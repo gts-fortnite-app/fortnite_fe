@@ -67,8 +67,8 @@ function App() {
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">{playerStats.attributes.name}</p>
-              <button className="delete" aria-label="close" onClick={handleClose}></button>
-            </header>             
+              <button className="delete button is-danger" aria-label="close" onClick={handleClose}></button>
+              </header>             
             <div class="card-content">
               <div class="content">
                 <p>Battle Pass Level: {playerStats.attributes.battle_pass_level}</p>
@@ -127,6 +127,64 @@ function App() {
                         <p>Minutes Played: {playerStats.attributes.solo.minutesPlayed}</p>
                         <p>Players Out-lived: {playerStats.attributes.solo.playersOutlived}</p>
                         <p>Last Updated: {playerStats.attributes.solo.lastModified}</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+                <details>
+                  <summary>Duo Stats</summary>
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="content">
+                        <p>Duo Score: {playerStats.attributes.duo.score}</p>
+                        <p>Duo Score Per Min: {playerStats.attributes.duo.scorePerMin}</p>
+                        <p>Duo Score Per Match: {playerStats.attributes.duo.scorePerMatch}</p>
+                        <p>Wins: {playerStats.attributes.duo.wins}</p>
+                        <p>Top 3: {playerStats.attributes.duo.top3}</p>
+                        <p>Top 5: {playerStats.attributes.duo.top5}</p>
+                        <p>Top 6:{playerStats.attributes.duo.top6}</p>
+                        <p>Top 10: {playerStats.attributes.duo.top10}</p>
+                        <p>Top 12: {playerStats.attributes.duo.top12}</p>
+                        <p>Top 25:{playerStats.attributes.duo.top25}</p>
+                        <p>Kills: {playerStats.attributes.duo.kills}</p>
+                        <p>Kills Per Min: {playerStats.attributes.duo.killsPerMin}</p>
+                        <p>Kills Per Match: {playerStats.attributes.duo.killsPerMatch}</p>
+                        <p>Deaths: {playerStats.attributes.duo.deaths}</p>
+                        <p>K/D: {playerStats.attributes.duo.kd}</p>
+                        <p>Matches: {playerStats.attributes.duo.matches}</p>
+                        <p>Win Rate: {playerStats.attributes.duo.winRate}</p>
+                        <p>Minutes Played: {playerStats.attributes.duo.minutesPlayed}</p>
+                        <p>Players Out-lived: {playerStats.attributes.duo.playersOutlived}</p>
+                        <p>Last Updated: {playerStats.attributes.duo.lastModified}</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+                <details>
+                  <summary>Squad Stats</summary>
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="content">
+                        <p>Squad Score: {playerStats.attributes.squad.score}</p>
+                        <p>Squad Score Per Min: {playerStats.attributes.squad.scorePerMin}</p>
+                        <p>Squad Score Per Match: {playerStats.attributes.squad.scorePerMatch}</p>
+                        <p>Wins: {playerStats.attributes.squad.wins}</p>
+                        <p>Top 3: {playerStats.attributes.squad.top3}</p>
+                        <p>Top 5: {playerStats.attributes.squad.top5}</p>
+                        <p>Top 6:{playerStats.attributes.squad.top6}</p>
+                        <p>Top 10: {playerStats.attributes.squad.top10}</p>
+                        <p>Top 12: {playerStats.attributes.squad.top12}</p>
+                        <p>Top 25:{playerStats.attributes.squad.top25}</p>
+                        <p>Kills: {playerStats.attributes.squad.kills}</p>
+                        <p>Kills Per Min: {playerStats.attributes.squad.killsPerMin}</p>
+                        <p>Kills Per Match: {playerStats.attributes.squad.killsPerMatch}</p>
+                        <p>Deaths: {playerStats.attributes.squad.deaths}</p>
+                        <p>K/D: {playerStats.attributes.squad.kd}</p>
+                        <p>Matches: {playerStats.attributes.squad.matches}</p>
+                        <p>Win Rate: {playerStats.attributes.squad.winRate}</p>
+                        <p>Minutes Played: {playerStats.attributes.squad.minutesPlayed}</p>
+                        <p>Players Out-lived: {playerStats.attributes.squad.playersOutlived}</p>
+                        <p>Last Updated: {playerStats.attributes.squad.lastModified}</p>
                       </div>
                     </div>
                   </div>
