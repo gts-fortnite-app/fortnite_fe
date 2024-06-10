@@ -52,6 +52,10 @@ function App() {
     })
   };
   
+  const handleClose = () => {
+    setPlayerStats(null);
+  };
+
 
   return (
     <div className="App">
@@ -63,6 +67,7 @@ function App() {
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">{playerStats.attributes.name}</p>
+              <button className="delete" aria-label="close" onClick={handleClose}></button>
             </header>             
             <div class="card-content">
               <div class="content">
