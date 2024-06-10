@@ -7,7 +7,7 @@ function Items(props) {
       {Array.isArray(props.items) ? (
         props.items.map((item, index) => (
           <div key={`${item.id}_${index}`} className="column is-one-third">
-            <div className="card">
+            <div className="card" style={{ height: '100%' }}>
               <div className="card-content">
                 <p className="title">{item.attributes.name}</p>
                 <div className="content">
