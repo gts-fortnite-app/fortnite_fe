@@ -205,7 +205,7 @@ function App() {
           </div>
         </div>
         )}
-      <div class="box">{date && <p className="date">{date}</p>}</div>
+      <div class="box has-background-primary-00 has-text-primary-00-invert is-size-4 is-size-2-mobile">Time Dropped:{date && <p className="date">{date}</p>}</div>
       <Items items={currentItems} />      
       <Pagination
           itemsPerPage={itemsPerPage}
