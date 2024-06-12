@@ -66,6 +66,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={logo} alt="Logo"/>
+      <div class="box has-background-primary-00 has-text-primary-00-invert is-size-5 is-size-2-mobile">Search for Player Stats</div>
       <SearchBar onSearch={handleSearch} />
       {error && (
           <div className="notification is-danger">
