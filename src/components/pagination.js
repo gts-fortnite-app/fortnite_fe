@@ -1,19 +1,34 @@
+import React from 'react';
+
 const Pagination = ({ itemsPerPage, totalItems, currentPage, setCurrentPage }) => {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
-    pageNumbers.push(i);
+  if (totalPages <= 5) {
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(i);
+    }
+  } else {
+    if (currentPage <= 3) {
+      pageNumbers.push(1, 2, 3, 4, '...', totalPages);
+    } else if (currentPage >= totalPages - 2) {
+      pageNumbers.push(1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+    } else {
+      pageNumbers.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+    }
   }
 
   const handleClick = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    if (pageNumber !== '...') {
+      setCurrentPage(pageNumber);
+    }
   };
 
   return (
-    <nav className="pagination" role="navigation" aria-label="pagination">
+    <nav className="pagination is-rounded" role="navigation" aria-label="pagination">
       <a
         className="pagination-previous"
-        onClick={() => setCurrentPage(currentPage - 1)}
+        onClick={() => handleClick(currentPage - 1)}
         disabled={currentPage === 1}
       >
         Previous
@@ -21,18 +36,24 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, setCurrentPage }) =
       <a
         className="pagination-next"
         onClick={() => handleClick(currentPage + 1)}
-        disabled={currentPage === Math.ceil(totalItems / itemsPerPage)}
+        disabled={currentPage === totalPages}
       >
         Next page
       </a>
       <ul className="pagination-list">
-        {pageNumbers.map(number => (
-          <li key={number}>
+        {pageNumbers.map((number, index) => (
+          <li key={index}>
             <a
               href="#"
-              className={number === currentPage ? "pagination-link is-current" : "pagination-link"}
+              className={
+                number === currentPage
+                  ? "pagination-link is-current"
+                  : number === '...'
+                  ? "pagination-ellipsis"
+                  : "pagination-link"
+              }
               onClick={() => handleClick(number)}
-              >
+            >
               {number}
             </a>
           </li>
@@ -43,4 +64,3 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, setCurrentPage }) =
 };
 
 export default Pagination;
-
