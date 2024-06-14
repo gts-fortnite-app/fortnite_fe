@@ -60,8 +60,8 @@ GT's Fortnite Tracker App is built with a React Front-End, this application is d
 
 ## Installation Instructions:
 - Fork this repository. 
-- Clone it to your local machine using the command: `git clone git@github.com:Foodie-Brain/fe_foodie.git`.
-- Run the command: `cd fe_foodie`
+- Clone it to your local machine using the command: `git clone git@github.com:gts-fortnite-app/fortnite_fe.git`.
+- Run the command: `cd fortnite_fe`
 - Run the command: `npm install`
 - Run the command: `npm install apollo-upload-client`
 - Run the command: `npm start`
