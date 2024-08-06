@@ -19,7 +19,7 @@ const Pagination = ({ itemsPerPage, totalItems, currentPage, setCurrentPage }) =
   }
 
   const handleClick = (pageNumber) => {
-    if (pageNumber !== '...') {
+    if (pageNumber !== '...' && pageNumber >= 1 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
     }
   };
