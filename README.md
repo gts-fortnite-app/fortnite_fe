@@ -27,7 +27,6 @@ GT's Fortnite Tracker App is built with a React Front-End, this application is d
   <li>Caching: 24-hour caching for item shop items to optimize performance and reduce API calls </li>
   <li>Responsive Design: Enjoy a friendly experience across devices and screen sizes.</li>
   <li>Player Stats Lookup: Users can search and view player statistics by ID, offering insights into their friends.</li>  
----
 
 <details>
 <summary>The Team</summary>
