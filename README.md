@@ -24,14 +24,9 @@ Technologies used:<br>
 GT's Fortnite Tracker App is built with a React Front-End, this application is deployed on Heroku for accessibility. It integrates Fortnite's external API to retrieve real-time data and implements a customized internal API to transmit data to the Front End with Cross-Origin Resource Sharing (CORS) support. 
 <h1> Key Features </h1>
   <li>Real-Time Updates: Stay up-to-date with the latest additions to the Fortnite item shop, including skins and emotes.</li>
-  <li>UI: A clean design makes navigating through the app easy.</li>
+  <li>Caching: 24-hour caching for item shop items to optimize performance and reduce API calls </li>
   <li>Responsive Design: Enjoy a friendly experience across devices and screen sizes.</li>
-<h2>Upcoming Enhancements</h2>
-  <li>Caching Mechanism: Implement 24-hour caching for item shop items to optimize performance and reduce API calls.</li>
-  <li>Content: Implement Fortnite's music tracks and special items to the app, providing a wider array of content.</li>
-  <li>Player Stats Lookup: Enable users to search and view player statistics by ID, offering insights into their friends.</li>
-  <li>Tips Section: Share valuable tips and strategies to help users improve their Fortnite gameplay straight from Fortnite's api.</li>
-  
+  <li>Player Stats Lookup: Users can search and view player statistics by ID, offering insights into their friends.</li>  
 ---
 
 <details>
